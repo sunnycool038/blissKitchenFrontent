@@ -1,0 +1,44 @@
+<form [formGroup]="profileForm">
+    <div class="theLogin" >
+        <mat-card class="loginCard" style="background-color: #dce8e8;border-radius: 20px;">
+            <mat-card-header>
+                <mat-card-title class="title" >login</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <!-- <div>
+                    <mat-form-field appearance="outline">
+                        <mat-label>first name</mat-label>
+                        <input formControlName="firstname" matInput placeholder="FirstName">
+                    </mat-form-field>
+                </div>
+
+                <div>
+                    <mat-form-field appearance="outline">
+                        <mat-label>last name</mat-label>
+                        <input formControlName="lastname" matInput placeholder="LastName">
+                    </mat-form-field>
+                </div> -->
+
+                <div>
+                    <mat-form-field appearance="outline">
+                        <mat-label>email</mat-label>
+                        <input formControlName="email" matInput placeholder="email" type="email">
+                    </mat-form-field>
+                </div>
+
+                <div>
+                    <mat-form-field appearance="outline">
+                        <mat-label>password</mat-label>
+                        <input formControlName="password" matInput placeholder="password" type="password">
+                    </mat-form-field>
+                </div>
+
+            </mat-card-content>
+            <mat-card-actions>
+                <button (click)="login()" mat-raised-button color="primary" style="width: 100%; border-radius: 10px;">Submit</button>
+            </mat-card-actions>
+
+
+        </mat-card>
+    </div>
+</form>
